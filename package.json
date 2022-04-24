@@ -18,6 +18,10 @@
     "test:ui": "vitest --ui",
     "test:run": "vitest run"
   },
+  "files": [
+    "dist/**/*",
+    "docs/logo.png"
+  ],
   "keywords": [
     "string",
     "helper",
