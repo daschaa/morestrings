@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="docs/logo.png" />
+  <img src="https://github.com/daschaa/morestrings/blob/HEAD/docs/logo.png" />
 </h1>
 
 ## 🚀 Getting Started
