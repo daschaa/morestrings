@@ -1,5 +1,5 @@
 {
-  "name": "morestring",
+  "name": "morestrings",
   "version": "0.0.1",
   "description": "💬 More string functions!",
   "source": "src/index.js",
