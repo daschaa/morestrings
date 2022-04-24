@@ -2,7 +2,15 @@
   <img src="docs/logo.png" />
 </h1>
 
-<p align="center">
-  <strong>💬 Enhanced string functions!</strong>
-</p>
+## 🚀 Getting Started
+The package can be installed with
+```bash
+npm install morestrings
+```
+After the install, just beg for `more()`! ❤️
+```javascript
+import { more } from 'morestrings';
 
+more();
+"Dogs are great!".reverse; // => !taerg era sgoD
+```
