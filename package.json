@@ -1,19 +1,22 @@
 {
   "name": "morestrings",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "💬 More string functions!",
   "source": "src/index.js",
   "type": "module",
   "exports": {
-    "require": "./dist/index.js",
+    "require": "./dist/index.cjs",
     "default": "./dist/index.modern.js"
   },
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "umd:main": "dist/index.umd.js",
   "files": [
-    "dist/*"
+    "dist/index.cjs",
+    "dist/index.cjs.map",
+    "dist/index.modern.js",
+    "dist/index.modern.js.map"
   ],
   "scripts": {
     "build": "microbundle",
