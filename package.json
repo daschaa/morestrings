@@ -1,6 +1,6 @@
 {
   "name": "morestrings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "💬 More string functions!",
   "source": "src/index.js",
   "type": "module",
@@ -12,6 +12,9 @@
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "umd:main": "dist/index.umd.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
