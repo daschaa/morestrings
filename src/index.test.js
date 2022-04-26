@@ -6,7 +6,7 @@ describe('String functions', () => {
         more();
     });
     describe('reverse', () => {
-        test('defined string', () => {
+        test('String converts to gnirtS', () => {
             expect("String".reverse).toBe("gnirtS");
         });
         test('empty string', () => {
@@ -27,8 +27,23 @@ describe('String functions', () => {
             ['   Bla Blub   ', 'bla-blub'],
             [' Üm Läu  t ', 'um-lau-t'],
             ['Crème Brulée', 'creme-brulee'],
-        ])('defined string', (input, output) => {
+        ])('%s converts to %s', (input, output) => {
             expect(input.slugify).toBe(output);
         })
+    });
+    describe('camelCase', () => {
+        test.each([
+            ['first_name', 'firstName'],
+            ['test-data', 'testData'],
+            ['über-trieben', 'uberTrieben'],
+            ['_moz-webkit', 'MozWebkit'],
+            ['_random_data', 'RandomData'],
+            ['mul_tip_le_underscores', 'mulTipLeUnderscores'],
+            ['space in between', 'spaceInBetween'],
+            ['dogs_are_great!', 'dogsAreGreat'],
+            ['some special characters . @#$%^&*())_+}{[]\\|"\':;?/>.<~`', 'someSpecialCharacters'],
+        ])('%s converts to %s', (input, output) => {
+            expect(input.camelCase).toBe(output);
+        });
     })
 });

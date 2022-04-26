@@ -21,6 +21,10 @@ After the install, just call for `more()`! ❤️
 import { more } from 'morestrings';
 
 more();
+
 "Dogs are great!".reverse; // => !taerg era sgoD
+
 "Dogs are great!".slugify; // => dogs-are-great!
+
+"dogs_are_great!".camelCase; // => dogsAreGreat
 ```
