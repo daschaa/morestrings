@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) ![npm bundle size](https://img.shields.io/bundlephobia/min/morestrings) ![npm](https://img.shields.io/npm/dw/morestrings)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![npm bundle size](https://img.shields.io/bundlephobia/min/morestrings)](https://www.npmjs.com/package/morestrings) [![npm](https://img.shields.io/npm/dw/morestrings)](https://www.npmjs.com/package/morestrings)
 
 </div>
 <p>
