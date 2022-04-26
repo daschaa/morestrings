@@ -39,11 +39,11 @@
     "vitest": "^0.9.4"
   },
   "bugs": {
-    "url": "https://github.com/daschaa/morestring/issues"
+    "url": "https://github.com/daschaa/morestrings/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daschaa/morestring.git"
+    "url": "git+https://github.com/daschaa/morestrings.git"
   },
-  "homepage": "https://github.com/daschaa/morestring#readme"
+  "homepage": "https://github.com/daschaa/morestrings#readme"
 }
