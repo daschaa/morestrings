@@ -45,5 +45,25 @@ describe('String functions', () => {
         ])('%s converts to %s', (input, output) => {
             expect(input.camelCase).toBe(output);
         });
-    })
+    });
+
+    describe('contains', function () {
+        test.each([
+            ['Test that in this string is a string', 'this', true],
+            ['Test that in this string is not a string', 'banana', false],
+            ['Test that in this string is not a string', null, false],
+            ['Test that in this string is not a string', undefined, false],
+            ['Test that in this string is not a string', 'a', true],
+            ['testtesttest', 'tt', true],
+            ['', '', true],
+            ['', null, false],
+            ['', undefined, false],
+            ['', 0, false],
+            ['', false, false],
+            ['0', 0, true],
+            ['false', false, true],
+        ])('%s contains %s is %s', (input, search, expected) => {
+            expect(input.contains(search)).toBe(expected);
+        });
+    });
 });

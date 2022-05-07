@@ -34,5 +34,10 @@ export const more = function () {
     String.prototype.__defineGetter__("camelCase", function() {
         return camelCase(this);
     });
+    Object.defineProperty(String.prototype, 'contains', {
+        value: function (search) {
+            return this.indexOf(search) >= 0;
+        }
+    });
 };
 
