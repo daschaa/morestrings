@@ -23,7 +23,8 @@
     "dev": "microbundle watch",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run test && npm run build"
   },
   "keywords": [
     "string",
