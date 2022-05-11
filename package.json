@@ -21,9 +21,8 @@
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
-    "test": "vitest",
+    "test": "vitest run",
     "test:ui": "vitest --ui",
-    "test:run": "vitest run",
     "prepublishOnly": "npm run test:run && npm run build"
   },
   "keywords": [
