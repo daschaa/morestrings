@@ -39,5 +39,19 @@ export const more = function () {
             return this.indexOf(search) >= 0;
         }
     });
+
+    Object.defineProperty(String.prototype, 'between', {
+        value: function (start, end) {
+            if(start == null || end == null) {
+                return '';
+            }
+            const startPos = this.indexOf(start);
+            const endPos = this.indexOf(end, startPos + start.toString().length);
+            if(endPos < 0 || startPos < 0) {
+                return '';
+            }
+            return this.slice(startPos + start.toString().length, endPos);
+        }
+    });
 };
 

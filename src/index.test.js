@@ -66,4 +66,22 @@ describe('String functions', () => {
             expect(input.contains(search)).toBe(expected);
         });
     });
+
+    describe('between', () => {
+        test.each([
+            ['<body>Test string</body>', '<body>', '</body>', 'Test string'],
+            ['<body><a>Test string</body>', '<a>', '</a>', ''],
+            ['<body><a>Test string</a></body>', '<b>', '</a>', ''],
+            ['<div><div>Test string</div></div>', '<div>', '</div>', '<div>Test string'],
+            ['<div><div>Test string</div></div>', '', '', ''],
+            ['<div><div>Test string>', '<div>', '</div>', ''],
+            ['<div><div>Test string>', null, '</div>', ''],
+            ['<div><div>Test string>', undefined, '</div>', ''],
+            ['<div><div>Test string</div>', '<div>', null, ''],
+            ['<div><div>Test string>', 1, false, ''],
+            ['<div>1Test stringfalse', 1, false, 'Test string'],
+        ])('%s between %s and %s is %s', (input, start, end, expected) => {
+            expect(input.between(start, end)).toBe(expected);
+        })
+    })
 });
